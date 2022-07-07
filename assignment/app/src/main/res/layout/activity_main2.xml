@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <ImageButton
+           android:id="@+id/img_btn"
+           android:layout_width="20dp"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+           android:backgroundTint="#00000000"
+           android:layout_marginStart="10dp"/>
+
+       <TextView
+           android:textStyle="bold"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="분실물 상세"
+           android:textColor="@color/black"
+           android:layout_gravity="center_vertical"
+           android:textSize="20sp"/>
+
+
+   </LinearLayout>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2022-04-04"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        tools:text="최민재 개잘생김"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="1210 윤석규"
+        android:textSize="15sp"
+        android:paddingStart="10dp"/>
+
+    <TextView
+        android:id="@+id/explain"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:text="민재형 사랑해요"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="제가 찾았어요! 연락하기"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:backgroundTint="#9975C5"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
